@@ -1,10 +1,3 @@
-
-def load_input():
-    content = open("input.txt", "r")
-    
-
-    return
-
 def part_one():
     content = open("input.txt", "r")
     previous_measurement = None
