@@ -119,7 +119,7 @@ def part_two():
     # This code is so bad and inefficient
     # but atleast I reached the correct result in the end
 
-    content = open('/home/andreasvoss/repos/advent-of-code-2021/9/better_input.txt', 'r')
+    content = open('better_input.txt', 'r')
 
     basin_map = [[0 for x in range(100)] for y in range(100)]
 
@@ -148,6 +148,7 @@ def part_two():
             unexplored_coordinates.pop(idx)
         explored_coordinates, basin_coordinates = explore_basin(starting_point, explored_coordinates, basin_coordinates, basin_map)
         unexplored_coordinates = [unexp for unexp in unexplored_coordinates if unexp not in explored_coordinates]
+        explored_coordinates = []
         all_basins.append(len(basin_coordinates))
 
     largest_basins = sorted(all_basins, reverse=True)[:3]
