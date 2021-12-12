@@ -1,5 +1,3 @@
-import pprint
-
 def find_neighbouring_octopi(coordinate, max_x, max_y):
     x,y = coordinate
     neighbouring_octopi = []
