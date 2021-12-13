@@ -92,7 +92,7 @@ def part_one():
     print(len(found_paths))
 
 def part_two():
-    content = open('/home/andreasvoss/repos/advent-of-code-2021/12/input.txt', 'r')
+    content = open('input.txt', 'r')
 
     from_cave = []
     to_cave = []
